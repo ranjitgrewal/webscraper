@@ -43,7 +43,7 @@ source venv/bin/activate
 5. Install dependencies:
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 1. Run the Django development server:
 
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 2. Open a web browser and go to http://localhost:8000/scrape to access the web application.
