@@ -7,10 +7,8 @@ from django.views.decorators.cache import cache_page
 URLs = ["https://shop.lululemon.com/c/womens-leggings/_/N-8r6?format=json","https://shop.lululemon.com/c/accessories/_/N-1z0xcmkZ1z0xl44Z8ok?format=json"]
 """
   This view function is responsible for extracting product information
-  by scraping a provided URL. It utilizes the BeautifulSoup library
-  to parse the HTML content of the webpage and extract relevant product
-  details such as product name, price, and description.
- 
+  by scraping the provided URLs. 
+  
   Parameters:
   - request: HTTP request object. 
   Returns:
