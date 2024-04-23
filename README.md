@@ -56,9 +56,32 @@ python manage.py runserver
 
 2. Open a web browser and go to http://localhost:8000/scrape to access the web application.
 
-3. View the scraped product display names displayed on the web page in JSON format
+3. View the scraped product display names displayed on the web page in JSON format like below starting with URL and then the list of product.displayName
 
-4. The cached content will be displayed for 15 minutes
+   {
+     "https://shop.lululemon.com/c/womens-leggings/_/N-8r6?format=json":
+       {"product.displayName":
+         [
+           ["Wunder Train High-Rise Tight 25\""],
+            ["lululemon Align™ High-Rise Pant 28\""],
+            ....
+           ["Throwback Gather and Crow High-Rise Crop 21\""],
+           ["Keep the Heat Thermal High-Rise Tight 28\" *Colourblock"]
+         ]
+      },
+    "https://shop.lululemon.com/c/accessories/_/N-1z0xcmkZ1z0xl44Z8ok?format=json":
+     {"product.displayName":
+       [
+         ["Team Canada Future Legacy Ball Cap *COC CPC Logo"],
+         ["Classic Unisex Ball Cap *Wordmark"],
+         ....
+         ["Men's Fast and Free Running Hat"],
+         ["Drawcord Hiking Cap"]
+       ]
+      }
+   }
+
+5. The cached content will be displayed for 15 minutes
 
 ## Testing
 
